@@ -23,23 +23,25 @@
           <img class="brand-mark" src="logo.png" alt="Kick Notifier logosu" />
           <span>Kick Notifier</span>
         </div>
+
         <nav class="nav" aria-label="Ana menü">
           <a href="#features">Özellikler</a>
-          <a href="#install">İndir</a>
+          <a href="#extensions">Eklentiler</a>
           <a href="docs.html">Kurulum</a>
           <a href="https://github.com/insanmusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
       </header>
 
-      <main>
-        <section class="hero" id="install">
+      <main class="landing-page">
+        <section class="hero">
           <div class="hero-copy">
             <p class="eyebrow">Firefox + Chromium</p>
-            <h1>Takip ettiğin Kick yayıncılarını hiç kaçırma.</h1>
+            <h1>Takip ettiğin Kick yayıncılarını sade biçimde izle.</h1>
             <p class="lead">
-              Kick’te favori yayıncıların canlı olup olmadığını hızlıca kontrol et.
-              Firefox ve Chromium için ayrı eklentiler hazır; sade, hafif ve kullanışlı.
+              Eklentilerimiz, favori yayıncıların canlı olup olmadığını, izleyici sayılarını
+              ve profil bilgilerini tek bakışta gösterir. Gereksiz şey yok; sadece işlev.
             </p>
+
             <div class="cta-group">
               <a
                 class="button primary"
@@ -51,13 +53,14 @@
               </a>
               <a
                 class="button secondary"
-                href="https://github.com/insanmusti/kick-notifier/releases"
+                href="https://github.com/insanmusti/kick-takipci-chromium/releases"
                 target="_blank"
                 rel="noreferrer"
               >
                 Chromium için indir
               </a>
             </div>
+
             <ul class="meta" aria-label="Tarayıcı uyumluluğu">
               <li>Firefox</li>
               <li>Chrome</li>
@@ -66,85 +69,108 @@
             </ul>
           </div>
 
-          <div class="hero-art" aria-hidden="true">
-            <div class="panel panel-top">
-              <span class="dot red"></span>
-              <span class="dot yellow"></span>
-              <span class="dot green"></span>
-            </div>
-            <div class="panel panel-body">
-              <div class="mini-card">
-                <span class="mini-icon">●</span>
-                <div>
-                  <strong>Canlı yayın</strong>
-                  <small>Takip ettiği 12 kanal</small>
-                </div>
+          <div class="hero-panel" aria-label="Eklenti örnek görünümü">
+            <div class="panel-window">
+              <div class="window-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
               </div>
 
-              <div class="mini-stats">
-                <div>
-                  <span>İzleyici</span>
-                  <strong>42.8K</strong>
+              <div class="window-body">
+                <div class="status-row">
+                  <span class="avatar">K</span>
+                  <div>
+                    <strong>kick</strong>
+                    <small>Canlı yayın</small>
+                  </div>
                 </div>
-                <div>
-                  <span>Durum</span>
-                  <strong>Canlı</strong>
-                </div>
-              </div>
 
-              <div class="mini-chart">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="stat-grid">
+                  <div>
+                    <span>İzleyici</span>
+                    <strong>42.8K</strong>
+                  </div>
+                  <div>
+                    <span>Durum</span>
+                    <strong>Canlı</strong>
+                  </div>
+                </div>
+
+                <div class="bars" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="details">
-          <div class="details-copy">
-            <p class="section-label">Eklentilerin amacı</p>
-            <h2>Takip listeni tek bakışta gör.</h2>
-          </div>
-          <div class="details-grid">
-            <article>
-              <h3>Canlı / çevrimdışı durum</h3>
-              <p>Takip ettiğin yayıncıların anlık yayın durumunu görebilirsin. Açık yayın varsa hemen fark edersin.</p>
-            </article>
-            <article>
-              <h3>İzleyici sayısı</h3>
-              <p>Canlı yayınlarda kaç kişi izlediğini görün. Hangi kanalın daha çok ilgi gördüğünü takip et.</p>
-            </article>
-            <article>
-              <h3>Profil fotoğrafı</h3>
-              <p>Takip edilen her yayıncının isminin yanında profil fotoğrafı gösterilir; akılda kalıcı ve hızlı bir görünüm sunar.</p>
-            </article>
-          </div>
+        <section class="feature-strip" id="features">
+          <article>
+            <span>01</span>
+            <h2>Takip listesi</h2>
+            <p>İstediğin Kick kullanıcılarını ekleyip, tek listede yönet.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h2>Canlı durumu</h2>
+            <p>Yayın açık mı, kapalı mı? Tek bakışla öğren.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h2>İzleyici bilgisi</h2>
+            <p>Canlı yayınların aktivitelerini ve izleyici hacmini görün.</p>
+          </article>
         </section>
 
-        <section class="features" id="features">
-          <article class="feature">
-            <span class="feature-index">01</span>
-            <h2>Takip ekleme</h2>
-            <p>Kick kullanıcı adını ekleyip takip listeni dilediğin gibi yönetebilirsin.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">02</span>
-            <h2>Rozet ve bildirim</h2>
-            <p>Canlı yayın sayısını eklenti simgesinde rozet olarak görürsün. Göz atmaya gerek kalmaz.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">03</span>
-            <h2>Gizlilik odaklı</h2>
-            <p>Sadece Kick API üzerinden durum, izleyici ve profil bilgisi alınır; ek olarak gereksiz veri toplamaz.</p>
-          </article>
+        <section class="extensions" id="extensions">
+          <div class="section-head">
+            <p class="section-label">Eklentiler</p>
+            <h2>Her tarayıcı için ayrı ama aynı amaç.</h2>
+          </div>
+
+          <div class="extension-grid">
+            <article class="extension-card">
+              <div class="card-top">
+                <span class="tag firefox">Firefox</span>
+                <h3>Kick Notifier</h3>
+              </div>
+              <p>
+                Firefox için hafif ve sade çalışan eklenti; takip ettiğin yayıncıları hızlıca kontrol et.
+              </p>
+              <ul>
+                <li>Canlı / çevrimdışı görünüm</li>
+                <li>İzleyici sayısı</li>
+                <li>Profil fotoğrafı</li>
+              </ul>
+              <a href="https://github.com/insanmusti/kick-notifier/releases" target="_blank" rel="noreferrer">İndir</a>
+            </article>
+
+            <article class="extension-card">
+              <div class="card-top">
+                <span class="tag chromium">Chromium</span>
+                <h3>Kick Takipçi</h3>
+              </div>
+              <p>
+                Chrome, Edge ve Brave için tasarlanmış aynı işlevsellik; kurulumu kolay ve minimal.
+              </p>
+              <ul>
+                <li>Takip listesi</li>
+                <li>Rozet bildirimi</li>
+                <li>Hızlı kontrol</li>
+              </ul>
+              <a href="https://github.com/insanmusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">İndir</a>
+            </article>
+          </div>
         </section>
 
         <section class="install-cta">
           <div>
             <p class="section-label">Kurulum</p>
-            <h2>Releases sayfasından indirip tarayıcına yükle.</h2>
+            <h2>Releases sayfasından indirip kullanmaya başla.</h2>
           </div>
           <a class="button primary" href="docs.html">Kurulum rehberi</a>
         </section>
