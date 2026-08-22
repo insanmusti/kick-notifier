@@ -8,74 +8,77 @@
       name="description"
       content="Kick Notifier eklentisini .xpi ve .crx dosyalarıyla nasıl kuracağınızı öğrenin."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell docs-page">
-      <header class="topbar">
-        <div class="brand" aria-label="Kick Notifier">
-          <img class="brand-mark" src="logo.png" alt="Kick Notifier logosu" />
-          <span>Kick Notifier</span>
-        </div>
-        <nav class="nav" aria-label="Ana menü">
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <img src="logo.png" alt="" width="20" height="20" />
+          <span>kick-notifier</span>
+        </a>
+        <nav aria-label="Ana menü">
           <a href="index.html">Anasayfa</a>
           <a href="https://github.com/insanmusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="docs-content">
-        <section class="doc-hero">
-          <p class="section-label">Kurulum rehberi</p>
-          <h1>Releases bölümünden indirip tarayıcına yükle.</h1>
-          <p>
-            Eklentiyi kullanmaya başlamak için uygun dosyayı GitHub Releases bölümünden indirin.
-            Firefox için .xpi, Chromium tabanlı tarayıcılar için .crx dosyasını kullanın.
-          </p>
-        </section>
+    <main class="wrap">
+      <section class="intro">
+        <h1>Releases bölümünden indirip tarayıcına yükle.</h1>
+        <p class="lead">
+          Firefox için .xpi, Chromium tabanlı tarayıcılar için .crx dosyasını
+          GitHub Releases bölümünden indir.
+        </p>
+      </section>
 
-        <section class="doc-grid">
-          <article class="doc-card">
-            <span class="feature-index">Firefox</span>
-            <h2>.xpi ile kurulum</h2>
-            <ol>
-              <li>GitHub releases sayfasından en güncel <strong>.xpi</strong> dosyasını indirin.</li>
-              <li>Firefox tarayıcınızı açın.</li>
-              <li><code>about:addons</code> adresini yazıp Enter tuşuna basın.</li>
-              <li>Sağ üstteki <strong>Ayarlar</strong> menüsüne tıklayın.</li>
-              <li><strong>Dosyadan eklenti yükle...</strong> seçeneğini seçin.</li>
-              <li>İndirdiğiniz .xpi dosyasını seçip <strong>Ekle</strong> butonuna basın.</li>
-            </ol>
-            <a class="button secondary" href="https://github.com/insanmusti/kick-notifier/releases" target="_blank" rel="noreferrer">Firefox releases</a>
-          </article>
+      <section id="firefox">
+        <h2 class="section-title">Firefox &mdash; .xpi ile kurulum</h2>
+        <ol class="steps">
+          <li>GitHub releases sayfasından en güncel <strong>.xpi</strong> dosyasını indir.</li>
+          <li><code>about:addons</code> adresini yazıp Enter'a bas.</li>
+          <li>Sağ üstteki <strong>Ayarlar</strong> menüsüne tıkla.</li>
+          <li><strong>Dosyadan eklenti yükle...</strong> seçeneğini seç.</li>
+          <li>.xpi dosyasını seçip <strong>Ekle</strong>'ye bas.</li>
+        </ol>
+        <p class="after-steps">
+          <a href="https://github.com/insanmusti/kick-notifier/releases" target="_blank" rel="noreferrer">
+            Firefox releases sayfası &rarr;
+          </a>
+        </p>
+      </section>
 
-          <article class="doc-card">
-            <span class="feature-index">Chromium</span>
-            <h2>.crx ile kurulum</h2>
-            <ol>
-              <li>GitHub releases sayfasından en güncel <strong>.crx</strong> dosyasını indirin.</li>
-              <li>Chrome, Edge, Brave veya benzeri tarayıcıyı açın.</li>
-              <li><code>chrome://extensions/</code> adresini yazıp Enter tuşuna basın.</li>
-              <li>Sağ üstten <strong>Geliştirici modunu</strong> açın.</li>
-              <li>.crx dosyasını sürükleyip bırakın.</li>
-              <li>Eklemeyi onaylayıp eklentiyi kullanmaya başlayın.</li>
-            </ol>
-            <a class="button secondary" href="https://github.com/insanmusti/kick-notifier/releases" target="_blank" rel="noreferrer">Chromium releases</a>
-          </article>
-        </section>
+      <section id="chromium">
+        <h2 class="section-title">Chromium &mdash; .crx ile kurulum</h2>
+        <ol class="steps">
+          <li>GitHub releases sayfasından en güncel <strong>.crx</strong> dosyasını indir.</li>
+          <li><code>chrome://extensions/</code> adresini yazıp Enter'a bas.</li>
+          <li>Sağ üstten <strong>Geliştirici modunu</strong> aç.</li>
+          <li>.crx dosyasını sayfaya sürükleyip bırak.</li>
+          <li>Eklemeyi onayla ve eklentiyi kullanmaya başla.</li>
+        </ol>
+        <p class="after-steps">
+          <a href="https://github.com/insanmusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">
+            Chromium releases sayfası &rarr;
+          </a>
+        </p>
+      </section>
 
-        <section class="note-box">
-          <h3>Önemli not</h3>
-          <p>
-            İndirme ve kurulum için doğrudan GitHub Releases bölümünü kullanın. Bununla eklentinin güncel versiyonunu güvenli şekilde alırsınız.
-          </p>
-        </section>
-      </main>
-    </div>
+      <section class="note">
+        <p>
+          İndirme ve kurulum için doğrudan GitHub Releases bölümünü kullan; böylece
+          eklentinin güncel sürümünü güvenli şekilde almış olursun.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap bar">
+        <span>&copy; 2026 insanmusti</span>
+        <a href="index.html">anasayfa</a>
+      </div>
+    </footer>
   </body>
 </html>

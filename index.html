@@ -8,173 +8,105 @@
       name="description"
       content="Kick yayıncılarını takip etmeyi kolaylaştıran Firefox ve Chromium eklentileri."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand" aria-label="Kick Notifier">
-          <img class="brand-mark" src="logo.png" alt="Kick Notifier logosu" />
-          <span>Kick Notifier</span>
-        </div>
-
-        <nav class="nav" aria-label="Ana menü">
-          <a href="#features">Özellikler</a>
-          <a href="#extensions">Eklentiler</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <img src="logo.png" alt="" width="20" height="20" />
+          <span>kick-notifier</span>
+        </a>
+        <nav aria-label="Ana menü">
+          <a href="#ozellikler">Özellikler</a>
+          <a href="#indir">İndir</a>
           <a href="docs.html">Kurulum</a>
           <a href="https://github.com/insanmusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
         </nav>
-      </header>
+      </div>
+    </header>
 
-      <main class="landing-page">
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Firefox + Chromium</p>
-            <h1>Takip ettiğin Kick yayıncılarını sade biçimde izle.</h1>
-            <p class="lead">
-              Eklentilerimiz, favori yayıncıların canlı olup olmadığını, izleyici sayılarını
-              ve profil bilgilerini tek bakışta gösterir. Gereksiz şey yok; sadece işlev.
-            </p>
+    <main class="wrap">
+      <section class="intro">
+        <h1>Takip ettiğin Kick yayıncılarını hiç kaçırma.</h1>
+        <p class="lead">
+          Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil
+          bilgilerini tek bakışta gösteren tarayıcı eklentisi. Gereksiz hiçbir şey yok.
+        </p>
+        <div class="actions">
+          <a
+            class="btn btn-solid"
+            href="https://github.com/insanmusti/kick-notifier/releases"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Firefox için indir
+          </a>
+          <a
+            class="btn"
+            href="https://github.com/insanmusti/kick-takipci-chromium/releases"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Chromium için indir
+          </a>
+        </div>
+        <p class="compat">firefox · chrome · edge · brave</p>
+      </section>
 
-            <div class="cta-group">
-              <a
-                class="button primary"
-                href="https://github.com/insanmusti/kick-notifier/releases"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Firefox için indir
-              </a>
-              <a
-                class="button secondary"
-                href="https://github.com/insanmusti/kick-takipci-chromium/releases"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Chromium için indir
-              </a>
-            </div>
+      <section id="ozellikler">
+        <h2 class="section-title">Özellikler</h2>
+        <ul class="feature-list">
+          <li>
+            <strong>Takip listesi</strong>
+            <span>İstediğin Kick kullanıcılarını ekleyip tek listede yönet.</span>
+          </li>
+          <li>
+            <strong>Canlı durumu</strong>
+            <span>Yayın açık mı, kapalı mı; tek bakışla öğren.</span>
+          </li>
+          <li>
+            <strong>İzleyici bilgisi</strong>
+            <span>Canlı yayınların izleyici hacmini ve aktivitesini gör.</span>
+          </li>
+        </ul>
+      </section>
 
-            <ul class="meta" aria-label="Tarayıcı uyumluluğu">
-              <li>Firefox</li>
-              <li>Chrome</li>
-              <li>Edge</li>
-              <li>Brave</li>
-            </ul>
+      <section id="indir">
+        <h2 class="section-title">İndir</h2>
+        <div class="downloads">
+          <div class="dl">
+            <h3>Firefox</h3>
+            <p>.xpi dosyasıyla kurulur.</p>
+            <a
+              href="https://github.com/insanmusti/kick-notifier/releases"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Releases sayfası &rarr;
+            </a>
           </div>
-
-          <div class="hero-panel" aria-label="Eklenti örnek görünümü">
-            <div class="panel-window">
-              <div class="window-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
-              </div>
-
-              <div class="window-body">
-                <div class="status-row">
-                  <span class="avatar">K</span>
-                  <div>
-                    <strong>kick</strong>
-                    <small>Canlı yayın</small>
-                  </div>
-                </div>
-
-                <div class="stat-grid">
-                  <div>
-                    <span>İzleyici</span>
-                    <strong>42.8K</strong>
-                  </div>
-                  <div>
-                    <span>Durum</span>
-                    <strong>Canlı</strong>
-                  </div>
-                </div>
-
-                <div class="bars" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
+          <div class="dl">
+            <h3>Chromium</h3>
+            <p>Chrome, Edge ve Brave için .crx.</p>
+            <a
+              href="https://github.com/insanmusti/kick-takipci-chromium/releases"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Releases sayfası &rarr;
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
+    </main>
 
-        <section class="feature-strip" id="features">
-          <article>
-            <span>01</span>
-            <h2>Takip listesi</h2>
-            <p>İstediğin Kick kullanıcılarını ekleyip, tek listede yönet.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h2>Canlı durumu</h2>
-            <p>Yayın açık mı, kapalı mı? Tek bakışla öğren.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h2>İzleyici bilgisi</h2>
-            <p>Canlı yayınların aktivitelerini ve izleyici hacmini görün.</p>
-          </article>
-        </section>
-
-        <section class="extensions" id="extensions">
-          <div class="section-head">
-            <p class="section-label">Eklentiler</p>
-            <h2>Her tarayıcı için ayrı ama aynı amaç.</h2>
-          </div>
-
-          <div class="extension-grid">
-            <article class="extension-card">
-              <div class="card-top">
-                <span class="tag firefox">Firefox</span>
-                <h3>Kick Notifier</h3>
-              </div>
-              <p>
-                Firefox için hafif ve sade çalışan eklenti; takip ettiğin yayıncıları hızlıca kontrol et.
-              </p>
-              <ul>
-                <li>Canlı / çevrimdışı görünüm</li>
-                <li>İzleyici sayısı</li>
-                <li>Profil fotoğrafı</li>
-              </ul>
-              <a href="https://github.com/insanmusti/kick-notifier/releases" target="_blank" rel="noreferrer">İndir</a>
-            </article>
-
-            <article class="extension-card">
-              <div class="card-top">
-                <span class="tag chromium">Chromium</span>
-                <h3>Kick Takipçi</h3>
-              </div>
-              <p>
-                Chrome, Edge ve Brave için tasarlanmış aynı işlevsellik; kurulumu kolay ve minimal.
-              </p>
-              <ul>
-                <li>Takip listesi</li>
-                <li>Rozet bildirimi</li>
-                <li>Hızlı kontrol</li>
-              </ul>
-              <a href="https://github.com/insanmusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">İndir</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="install-cta">
-          <div>
-            <p class="section-label">Kurulum</p>
-            <h2>Releases sayfasından indirip kullanmaya başla.</h2>
-          </div>
-          <a class="button primary" href="docs.html">Kurulum rehberi</a>
-        </section>
-      </main>
-    </div>
+    <footer class="site-footer">
+      <div class="wrap bar">
+        <span>&copy; 2026 insanmusti</span>
+        <a href="docs.html">kurulum rehberi</a>
+      </div>
+    </footer>
   </body>
 </html>
