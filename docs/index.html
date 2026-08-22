@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kick Notifier</title>
+    <meta
+      name="description"
+      content="Kick yayıncılarını takip etmeyi kolaylaştıran Firefox ve Chromium eklentileri."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Kick Notifier">
+          <img class="brand-mark" src="logo.png" alt="Kick Notifier logosu" />
+          <span>Kick Notifier</span>
+        </div>
+        <nav class="nav" aria-label="Ana menü">
+          <a href="#features">Özellikler</a>
+          <a href="#install">İndir</a>
+          <a href="docs.html">Kurulum</a>
+          <a href="https://github.com/insanmusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="install">
+          <div class="hero-copy">
+            <p class="eyebrow">Firefox + Chromium</p>
+            <h1>Takip ettiğin Kick yayıncılarını hiç kaçırma.</h1>
+            <p class="lead">
+              Kick’te favori yayıncıların canlı olup olmadığını hızlıca kontrol et.
+              Firefox ve Chromium için ayrı eklentiler hazır; sade, hafif ve kullanışlı.
+            </p>
+            <div class="cta-group">
+              <a
+                class="button primary"
+                href="https://github.com/insanmusti/kick-notifier/releases"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Firefox için indir
+              </a>
+              <a
+                class="button secondary"
+                href="https://github.com/insanmusti/kick-notifier/releases"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chromium için indir
+              </a>
+            </div>
+            <ul class="meta" aria-label="Tarayıcı uyumluluğu">
+              <li>Firefox</li>
+              <li>Chrome</li>
+              <li>Edge</li>
+              <li>Brave</li>
+            </ul>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="panel panel-top">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="panel panel-body">
+              <div class="mini-card">
+                <span class="mini-icon">●</span>
+                <div>
+                  <strong>Canlı yayın</strong>
+                  <small>Takip ettiği 12 kanal</small>
+                </div>
+              </div>
+
+              <div class="mini-stats">
+                <div>
+                  <span>İzleyici</span>
+                  <strong>42.8K</strong>
+                </div>
+                <div>
+                  <span>Durum</span>
+                  <strong>Canlı</strong>
+                </div>
+              </div>
+
+              <div class="mini-chart">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="details">
+          <div class="details-copy">
+            <p class="section-label">Eklentilerin amacı</p>
+            <h2>Takip listeni tek bakışta gör.</h2>
+          </div>
+          <div class="details-grid">
+            <article>
+              <h3>Canlı / çevrimdışı durum</h3>
+              <p>Takip ettiğin yayıncıların anlık yayın durumunu görebilirsin. Açık yayın varsa hemen fark edersin.</p>
+            </article>
+            <article>
+              <h3>İzleyici sayısı</h3>
+              <p>Canlı yayınlarda kaç kişi izlediğini görün. Hangi kanalın daha çok ilgi gördüğünü takip et.</p>
+            </article>
+            <article>
+              <h3>Profil fotoğrafı</h3>
+              <p>Takip edilen her yayıncının isminin yanında profil fotoğrafı gösterilir; akılda kalıcı ve hızlı bir görünüm sunar.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="features" id="features">
+          <article class="feature">
+            <span class="feature-index">01</span>
+            <h2>Takip ekleme</h2>
+            <p>Kick kullanıcı adını ekleyip takip listeni dilediğin gibi yönetebilirsin.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">02</span>
+            <h2>Rozet ve bildirim</h2>
+            <p>Canlı yayın sayısını eklenti simgesinde rozet olarak görürsün. Göz atmaya gerek kalmaz.</p>
+          </article>
+          <article class="feature">
+            <span class="feature-index">03</span>
+            <h2>Gizlilik odaklı</h2>
+            <p>Sadece Kick API üzerinden durum, izleyici ve profil bilgisi alınır; ek olarak gereksiz veri toplamaz.</p>
+          </article>
+        </section>
+
+        <section class="install-cta">
+          <div>
+            <p class="section-label">Kurulum</p>
+            <h2>Releases sayfasından indirip tarayıcına yükle.</h2>
+          </div>
+          <a class="button primary" href="docs.html">Kurulum rehberi</a>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

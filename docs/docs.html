@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurulum Rehberi | Kick Yayın Takipçisi</title>
+    <meta
+      name="description"
+      content="Kick Yayın Takipçisi eklentisini .xpi ve .crx dosyalarıyla nasıl kuracağınızı öğrenin."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell docs-page">
+      <header class="topbar">
+        <div class="brand" aria-label="Kick Yayın Takipçisi">
+          <img class="brand-mark" src="logo.png" alt="Kick Yayın Takipçisi logosu" />
+          <span>Kick Yayın Takipçisi</span>
+        </div>
+        <nav class="nav" aria-label="Ana menü">
+          <a href="index.html">Anasayfa</a>
+          <a href="https://github.com/insanmusti" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </header>
+
+      <main class="docs-content">
+        <section class="doc-hero">
+          <p class="section-label">Kurulum rehberi</p>
+          <h1>Releases bölümünden indirip tarayıcına yükle.</h1>
+          <p>
+            Eklentiyi kullanmaya başlamak için uygun dosyayı GitHub Releases bölümünden indirin.
+            Firefox için .xpi, Chromium tabanlı tarayıcılar için .crx dosyasını kullanın.
+          </p>
+        </section>
+
+        <section class="doc-grid">
+          <article class="doc-card">
+            <span class="feature-index">Firefox</span>
+            <h2>.xpi ile kurulum</h2>
+            <ol>
+              <li>GitHub releases sayfasından en güncel <strong>.xpi</strong> dosyasını indirin.</li>
+              <li>Firefox tarayıcınızı açın.</li>
+              <li><code>about:addons</code> adresini yazıp Enter tuşuna basın.</li>
+              <li>Sağ üstteki <strong>Ayarlar</strong> menüsüne tıklayın.</li>
+              <li><strong>Dosyadan eklenti yükle...</strong> seçeneğini seçin.</li>
+              <li>İndirdiğiniz .xpi dosyasını seçip <strong>Ekle</strong> butonuna basın.</li>
+            </ol>
+            <a class="button secondary" href="https://github.com/insanmusti/kick-yayin-takipcisi/releases" target="_blank" rel="noreferrer">Firefox releases</a>
+          </article>
+
+          <article class="doc-card">
+            <span class="feature-index">Chromium</span>
+            <h2>.crx ile kurulum</h2>
+            <ol>
+              <li>GitHub releases sayfasından en güncel <strong>.crx</strong> dosyasını indirin.</li>
+              <li>Chrome, Edge, Brave veya benzeri tarayıcıyı açın.</li>
+              <li><code>chrome://extensions/</code> adresini yazıp Enter tuşuna basın.</li>
+              <li>Sağ üstten <strong>Geliştirici modunu</strong> açın.</li>
+              <li>.crx dosyasını sürükleyip bırakın.</li>
+              <li>Eklemeyi onaylayıp eklentiyi kullanmaya başlayın.</li>
+            </ol>
+            <a class="button secondary" href="https://github.com/insanmusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">Chromium releases</a>
+          </article>
+        </section>
+
+        <section class="note-box">
+          <h3>Önemli not</h3>
+          <p>
+            İndirme ve kurulum için doğrudan GitHub Releases bölümünü kullanın. Bununla eklentinin güncel versiyonunu güvenli şekilde alırsınız.
+          </p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
