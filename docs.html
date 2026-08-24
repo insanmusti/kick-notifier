@@ -6,7 +6,7 @@
     <title>Kurulum Rehberi | Kick Notifier</title>
     <meta
       name="description"
-      content="Kick Notifier eklentisini .xpi ve .crx dosyalarıyla nasıl kuracağınızı öğrenin."
+      content="Kick Notifier eklentisini Firefox'a ve Chromium tabanlı tarayıcılara nasıl kuracağını öğren."
     />
     <meta
       http-equiv="Content-Security-Policy"
@@ -33,8 +33,8 @@
       <section class="intro">
         <h1>Releases bölümünden indirip tarayıcına yükle.</h1>
         <p class="lead">
-          Firefox için .xpi, Chromium tabanlı tarayıcılar için .crx dosyasını
-          GitHub Releases bölümünden indir.
+          Firefox için .xpi dosyasını, Chromium tabanlı tarayıcılar için zip
+          arşivini GitHub Releases bölümünden indir.
         </p>
       </section>
 
@@ -55,13 +55,13 @@
       </section>
 
       <section id="chromium">
-        <h2 class="section-title">Chromium &mdash; .crx ile kurulum</h2>
+        <h2 class="section-title">Chromium &mdash; geliştirici moduyla kurulum</h2>
         <ol class="steps">
-          <li>GitHub releases sayfasından en güncel <strong>.crx</strong> dosyasını indir.</li>
-          <li><code>chrome://extensions/</code> adresini yazıp Enter'a bas.</li>
-          <li>Sağ üstten <strong>Geliştirici modunu</strong> aç.</li>
-          <li>.crx dosyasını sayfaya sürükleyip bırak.</li>
-          <li>Eklemeyi onayla ve eklentiyi kullanmaya başla.</li>
+          <li>GitHub releases sayfasından zip dosyasını indir ve bir klasöre çıkart.</li>
+          <li><code>chrome://extensions</code> adresine gir.</li>
+          <li>Sağ üst köşedeki <strong>Geliştirici modu</strong> anahtarını aç.</li>
+          <li><strong>Paketlenmemiş öğe yükle</strong> (Load unpacked) butonuna tıkla.</li>
+          <li>Çıkarttığın <strong>kick-takipci-chromium</strong> klasörünü seç.</li>
         </ol>
         <p class="after-steps">
           <a href="https://github.com/insanmusti/kick-takipci-chromium/releases" target="_blank" rel="noreferrer">
