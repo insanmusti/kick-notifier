@@ -151,6 +151,7 @@ section + section {
 }
 
 #ozellikler,
+#yenilikler,
 #indir {
   padding: 44px 0;
 }
@@ -189,6 +190,37 @@ section + section {
 .feature-list span {
   color: var(--muted);
 }
+
+/* changelog */
+
+.changelog article {
+  padding: 13px 0 13px 18px;
+  border-left: 1px solid var(--line);
+}
+
+.changelog .fresh {
+  border-left: 2px solid var(--accent);
+}
+
+.changelog .when {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.78rem;
+}
+
+.changelog p {
+  margin: 0;
+  max-width: 56ch;
+  font-size: 0.95rem;
+}
+
+.changelog a {
+  color: var(--accent);
+}
+
+.changelog a:hover { text-decoration: underline; }
 
 /* downloads */
 
