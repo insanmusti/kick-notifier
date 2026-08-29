@@ -39,6 +39,7 @@
       "docs.lead":
         "Firefox için .xpi dosyasını, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indir.",
       "docs.firefox": "Firefox — .xpi ile kurulum",
+      "docs.ff.btn": "Firefox'tan indir",
       "docs.f1":
         "GitHub releases sayfasından en güncel <strong>.xpi</strong> dosyasını indir.",
       "docs.f2": "<code>about:addons</code> adresini yazıp Enter'a bas.",
@@ -95,6 +96,7 @@
       "docs.lead":
         "Download the .xpi file for Firefox and the zip archive for Chromium-based browsers from the GitHub Releases section.",
       "docs.firefox": "Firefox — install with .xpi",
+      "docs.ff.btn": "Download from Firefox",
       "docs.f1": "Download the latest <strong>.xpi</strong> file from the GitHub releases page.",
       "docs.f2": "Type in <code>about:addons</code> and press Enter.",
       "docs.f3": "Click the <strong>Settings</strong> menu in the top right.",
