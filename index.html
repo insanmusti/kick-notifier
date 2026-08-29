@@ -10,10 +10,11 @@
     />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'none'; style-src 'self'; img-src 'self'"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'"
     />
     <link rel="icon" href="logo.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="lang.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -23,19 +24,20 @@
           <span>kick-notifier</span>
         </a>
         <nav aria-label="Ana menü">
-          <a href="#yenilikler">Yenilikler</a>
-          <a href="#ozellikler">Özellikler</a>
-          <a href="#indir">İndir</a>
-          <a href="docs.html">Kurulum</a>
+          <a href="#yenilikler" data-i18n="nav.releases">Yenilikler</a>
+          <a href="#ozellikler" data-i18n="nav.features">Özellikler</a>
+          <a href="#indir" data-i18n="nav.download">İndir</a>
+          <a href="docs.html" data-i18n="nav.docs">Kurulum</a>
           <a href="https://github.com/insanmusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
+          <button id="lang-toggle" class="lang-btn" type="button" title="Dil / Language">EN</button>
         </nav>
       </div>
     </header>
 
     <main class="wrap">
       <section class="intro">
-        <h1>Takip ettiğin Kick yayıncılarını hiç kaçırma.</h1>
-        <p class="lead">
+        <h1 data-i18n="intro.h1">Takip ettiğin Kick yayıncılarını hiç kaçırma.</h1>
+        <p class="lead" data-i18n="intro.lead">
           Favori yayıncıların canlı olup olmadığını, izleyici sayılarını ve profil
           bilgilerini tek bakışta gösteren tarayıcı eklentisi. Gereksiz hiçbir şey yok.
         </p>
@@ -46,7 +48,7 @@
             target="_blank"
             rel="noreferrer"
           >
-            Firefox için indir
+            <span data-i18n="intro.dl.firefox">Firefox için indir</span>
           </a>
           <a
             class="btn"
@@ -54,66 +56,66 @@
             target="_blank"
             rel="noreferrer"
           >
-            Chromium için indir
+            <span data-i18n="intro.dl.chromium">Chromium için indir</span>
           </a>
         </div>
         <p class="compat">firefox · chrome · edge · brave</p>
       </section>
 
       <section id="yenilikler">
-        <h2 class="section-title">Yenilikler</h2>
+        <h2 class="section-title" data-i18n="new.title">Yenilikler</h2>
         <div class="changelog">
           <article class="fresh">
-            <span class="when">27 Ağustos 2026</span>
+            <span class="when" data-i18n="new.when">27 Ağustos 2026</span>
             <ul class="changes">
-              <li><strong>Chromium</strong> sürümüne dil desteği eklendi.</li>
-              <li>Eklenti artık <strong>İngilizce</strong> ve <strong>Almanca</strong> dillerinde de kullanılabiliyor.</li>
+              <li data-i18n="new.c1"><strong>Chromium</strong> sürümüne dil desteği eklendi.</li>
+              <li data-i18n="new.c2">Eklenti artık <strong>İngilizce</strong> ve <strong>Almanca</strong> dillerinde de kullanılabiliyor.</li>
             </ul>
           </article>
         </div>
       </section>
 
       <section id="ozellikler">
-        <h2 class="section-title">Özellikler</h2>
+        <h2 class="section-title" data-i18n="feat.title">Özellikler</h2>
         <ul class="feature-list">
           <li>
-            <strong>Takip listesi</strong>
-            <span>İstediğin Kick kullanıcılarını ekleyip tek listede yönet.</span>
+            <strong data-i18n="feat.list">Takip listesi</strong>
+            <span data-i18n="feat.list.d">İstediğin Kick kullanıcılarını ekleyip tek listede yönet.</span>
           </li>
           <li>
-            <strong>Canlı durumu</strong>
-            <span>Yayın açık mı, kapalı mı; tek bakışla öğren.</span>
+            <strong data-i18n="feat.live">Canlı durumu</strong>
+            <span data-i18n="feat.live.d">Yayın açık mı, kapalı mı; tek bakışla öğren.</span>
           </li>
           <li>
-            <strong>İzleyici bilgisi</strong>
-            <span>Canlı yayınların izleyici hacmini ve aktivitesini gör.</span>
+            <strong data-i18n="feat.viewers">İzleyici bilgisi</strong>
+            <span data-i18n="feat.viewers.d">Canlı yayınların izleyici hacmini ve aktivitesini gör.</span>
           </li>
         </ul>
       </section>
 
       <section id="indir">
-        <h2 class="section-title">İndir</h2>
+        <h2 class="section-title" data-i18n="dl.title">İndir</h2>
         <div class="downloads">
           <div class="dl">
-            <h3>Firefox</h3>
-            <p>.xpi dosyasıyla kurulur.</p>
+            <h3 data-i18n="dl.firefox">Firefox</h3>
+            <p data-i18n="dl.firefox.d">.xpi dosyasıyla kurulur.</p>
             <a
               href="https://addons.mozilla.org/tr/firefox/addon/kick-yay%C4%B1n-bildirici/"
               target="_blank"
               rel="noreferrer"
             >
-              AMO sayfası &rarr;
+              <span data-i18n="dl.firefox.a">AMO sayfası</span> &rarr;
             </a>
           </div>
           <div class="dl">
-            <h3>Chromium</h3>
-            <p>Chrome, Edge ve Brave; geliştirici moduyla yüklenir.</p>
+            <h3 data-i18n="dl.chromium">Chromium</h3>
+            <p data-i18n="dl.chromium.d">Chrome, Edge ve Brave; geliştirici moduyla yüklenir.</p>
             <a
               href="https://github.com/insanmusti/kick-takipci-chromium/releases"
               target="_blank"
               rel="noreferrer"
             >
-              Releases sayfası &rarr;
+              <span data-i18n="dl.chromium.a">Releases sayfası</span> &rarr;
             </a>
           </div>
         </div>
@@ -122,8 +124,8 @@
 
     <footer class="site-footer">
       <div class="wrap bar">
-        <span>&copy; 2026 insanmusti</span>
-        <a href="docs.html">kurulum rehberi</a>
+        <span data-i18n="footer.copy">&copy; 2026 insanmusti</span>
+        <a href="docs.html" data-i18n="footer.home">kurulum rehberi</a>
       </div>
     </footer>
   </body>
