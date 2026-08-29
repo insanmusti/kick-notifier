@@ -38,14 +38,9 @@
       "docs.h1": "Releases bölümünden indirip tarayıcına yükle.",
       "docs.lead":
         "Firefox için .xpi dosyasını, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indir.",
-      "docs.firefox": "Firefox — .xpi ile kurulum",
+      "docs.firefox": "Firefox — AMO'dan kurulum",
+      "docs.ff.desc": "Eklentiyi doğrudan Firefox eklenti mağazasından (AMO) kur.",
       "docs.ff.btn": "Firefox'tan indir",
-      "docs.f1":
-        "GitHub releases sayfasından en güncel <strong>.xpi</strong> dosyasını indir.",
-      "docs.f2": "<code>about:addons</code> adresini yazıp Enter'a bas.",
-      "docs.f3": "Sağ üstteki <strong>Ayarlar</strong> menüsüne tıkla.",
-      "docs.f4": "<strong>Dosyadan eklenti yükle...</strong> seçeneğini seç.",
-      "docs.f5": ".xpi dosyasını seçip <strong>Ekle</strong>'ye bas.",
       "docs.amo": "Firefox AMO sayfası",
       "docs.chromium": "Chromium — geliştirici moduyla kurulum",
       "docs.c1": "GitHub releases sayfasından zip dosyasını indir ve bir klasöre çıkart.",
@@ -95,13 +90,9 @@
       "docs.h1": "Download from Releases and install it in your browser.",
       "docs.lead":
         "Download the .xpi file for Firefox and the zip archive for Chromium-based browsers from the GitHub Releases section.",
-      "docs.firefox": "Firefox — install with .xpi",
+      "docs.firefox": "Firefox — install from AMO",
+      "docs.ff.desc": "Install the extension directly from the Firefox Add-ons store (AMO).",
       "docs.ff.btn": "Download from Firefox",
-      "docs.f1": "Download the latest <strong>.xpi</strong> file from the GitHub releases page.",
-      "docs.f2": "Type in <code>about:addons</code> and press Enter.",
-      "docs.f3": "Click the <strong>Settings</strong> menu in the top right.",
-      "docs.f4": "Choose <strong>Install Add-on From File...</strong>.",
-      "docs.f5": "Select the .xpi file and press <strong>Add</strong>.",
       "docs.amo": "Firefox AMO page",
       "docs.chromium": "Chromium — install in developer mode",
       "docs.c1": "Download the zip file from the GitHub releases page and extract it to a folder.",
@@ -130,7 +121,10 @@
       }
     }
     var btn = document.getElementById("lang-toggle");
-    if (btn) btn.textContent = lang === "tr" ? "EN" : "TR";
+    if (btn) {
+      btn.innerHTML =
+        '<span class="' + (lang === "tr" ? "on" : "") + '">TR</span><i>/</i><span class="' + (lang === "en" ? "on" : "") + '">EN</span>';
+    }
     document.documentElement.lang = lang;
   }
 
