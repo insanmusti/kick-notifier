@@ -35,6 +35,28 @@
       "footer.copy": "© 2026 insanmusti",
       "footer.home": "kurulum rehberi",
       "footer.home.index": "anasayfa",
+      "footer.privacy": "gizlilik politikası",
+      "privacy.h1": "Gizlilik Politikası",
+      "privacy.lead":
+        "Kick Notifier gizliliğinize önem verir. Bu sayfa, eklentinin hangi verileri topladığını ve nasıl kullanıldığını açıklar.",
+      "privacy.collection.title": "Veri Toplama",
+      "privacy.collection.p1":
+        "Kick Notifier, takip ettiğiniz Kick kullanıcılarının adlarını ve izleyici sayılarını göstermek için Kick API'sine istekler gönderir. Bu istekler yalnızca eklenti açıkken ve siz-manuel olarak tetiklediğinizde yapılır.",
+      "privacy.collection.p2":
+        "Eklenti herhangi bir kişisel veri, tanımlayıcı bilgi veya kullanım istatistiği toplamaz.",
+      "privacy.storage.title": "Veri Saklama",
+      "privacy.storage.p1":
+        "Takip listeniz ve dil tercihiniz yalnızca tarayıcınızın yerel depolama alanında (localStorage) saklanır. Bu veriler cihazınızdan dışarı çıkmaz ve bizim tarafımızdan erişilemez.",
+      "privacy.thirdparty.title": "Üçüncü Taraf Hizmetleri",
+      "privacy.thirdparty.p1":
+        "Eklenti, Kick API dışında herhangi bir üçüncü taraf hizmetiyle bağlantı kurmaz. Reklam, analitik veya izleme aracı kullanılmaz.",
+      "privacy.changes.title": "Politika Değişiklikleri",
+      "privacy.changes.p1":
+        "Bu politikada yapılacak değişiklikler GitHub deposunda duyurulacaktır. Güncellemeler için Depo sayfasını takip edebilirsiniz.",
+      "privacy.contact.title": "İletişim",
+      "privacy.contact.p1":
+        "Sorularınız için GitHub üzerinden iletişime geçebilirsiniz:",
+      "privacy.lastupdated": "Son güncelleme: 3 Eylül 2026",
       "docs.h1": "Releases bölümünden indirip tarayıcına yükle.",
       "docs.lead":
         "Firefox için .xpi dosyasını, Chromium tabanlı tarayıcılar için zip arşivini GitHub Releases bölümünden indir.",
@@ -87,6 +109,28 @@
       "footer.copy": "© 2026 insanmusti",
       "footer.home": "setup guide",
       "footer.home.index": "home",
+      "footer.privacy": "privacy policy",
+      "privacy.h1": "Privacy Policy",
+      "privacy.lead":
+        "Kick Notifier values your privacy. This page explains what data the extension collects and how it is used.",
+      "privacy.collection.title": "Data Collection",
+      "privacy.collection.p1":
+        "Kick Notifier sends requests to the Kick API to show the names and viewer counts of the Kick users you follow. These requests are only made when the extension is open and you manually trigger them.",
+      "privacy.collection.p2":
+        "The extension does not collect any personal data, identifiers, or usage statistics.",
+      "privacy.storage.title": "Data Storage",
+      "privacy.storage.p1":
+        "Your follow list and language preference are stored only in your browser's local storage (localStorage). This data never leaves your device and is not accessible to us.",
+      "privacy.thirdparty.title": "Third-Party Services",
+      "privacy.thirdparty.p1":
+        "The extension does not connect to any third-party services besides the Kick API. No ads, analytics, or tracking tools are used.",
+      "privacy.changes.title": "Policy Changes",
+      "privacy.changes.p1":
+        "Changes to this policy will be announced on the GitHub repository. You can follow the repo page for updates.",
+      "privacy.contact.title": "Contact",
+      "privacy.contact.p1":
+        "For questions, you can reach us via GitHub:",
+      "privacy.lastupdated": "Last updated: September 3, 2026",
       "docs.h1": "Download from Releases and install it in your browser.",
       "docs.lead":
         "Download the .xpi file for Firefox and the zip archive for Chromium-based browsers from the GitHub Releases section.",

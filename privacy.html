@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gizlilik Politikası | Kick Notifier</title>
+    <meta
+      name="description"
+      content="Kick Notifier eklentisinin gizlilik politikası ve veri toplama uygulamaları."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'"
+    />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="lang.js?v=2" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href="index.html">
+          <img src="logo.png" alt="" width="20" height="20" />
+          <span>kick-notifier</span>
+        </a>
+        <nav aria-label="Ana menü">
+          <a href="index.html" data-i18n="nav.home">Anasayfa</a>
+          <a href="https://github.com/insanmusti/kick-notifier" target="_blank" rel="noreferrer">GitHub</a>
+          <button id="lang-toggle" class="lang-btn" type="button" title="Dil / Language">EN</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="intro">
+        <h1 data-i18n="privacy.h1">Gizlilik Politikası</h1>
+        <p class="lead" data-i18n="privacy.lead">
+          Kick Notifier gizliliğinize önem verir. Bu sayfa, eklentinin hangi verileri topladığını ve nasıl kullanıldığını açıklar.
+        </p>
+      </section>
+
+      <section id="toplama">
+        <h2 class="section-title" data-i18n="privacy.collection.title">Veri Toplama</h2>
+        <p data-i18n="privacy.collection.p1">
+          Kick Notifier, takip ettiğiniz Kick kullanıcılarının adlarını ve izleyici sayılarını göstermek için Kick API'sine istekler gönderir. Bu istekler yalnızca eklenti açıkken ve siz-manuel olarak tetiklediğinizde yapılır.
+        </p>
+        <p data-i18n="privacy.collection.p2">
+          Eklenti herhangi bir kişisel veri, tanımlayıcı bilgi veya kullanım istatistiği toplamaz.
+        </p>
+      </section>
+
+      <section id="saklama">
+        <h2 class="section-title" data-i18n="privacy.storage.title">Veri Saklama</h2>
+        <p data-i18n="privacy.storage.p1">
+          Takip listeniz ve dil tercihiniz yalnızca tarayıcınızın yerel depolama alanında (localStorage) saklanır. Bu veriler cihazınızdan dışarı çıkmaz ve bizim tarafımızdan erişilemez.
+        </p>
+      </section>
+
+      <section id="ucuncu">
+        <h2 class="section-title" data-i18n="privacy.thirdparty.title">Üçüncü Taraf Hizmetleri</h2>
+        <p data-i18n="privacy.thirdparty.p1">
+          Eklenti, Kick API dışında herhangi bir üçüncü taraf hizmetiyle bağlantı kurmaz. Reklam, analitik veya izleme aracı kullanılmaz.
+        </p>
+      </section>
+
+      <section id="degisiklik">
+        <h2 class="section-title" data-i18n="privacy.changes.title">Politika Değişiklikleri</h2>
+        <p data-i18n="privacy.changes.p1">
+          Bu politikada yapılacak değişiklikler GitHub deposunda duyurulacaktır. Güncellemeler için Depo sayfasını takip edebilirsiniz.
+        </p>
+      </section>
+
+      <section id="iletisim">
+        <h2 class="section-title" data-i18n="privacy.contact.title">İletişim</h2>
+        <p data-i18n="privacy.contact.p1">
+          Sorularınız için GitHub üzerinden iletişime geçebilirsiniz:
+          <a href="https://github.com/insanmusti/kick-notifier/issues" target="_blank" rel="noreferrer">GitHub Issues</a>
+        </p>
+      </section>
+
+      <section class="note">
+        <p data-i18n="privacy.lastupdated">Son güncelleme: 3 Eylül 2026</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap bar">
+        <span data-i18n="footer.copy">&copy; 2026 insanmusti</span>
+        <a href="index.html" data-i18n="footer.home.index">anasayfa</a>
+      </div>
+    </footer>
+  </body>
+</html>
